@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="slots3.js"></script>
+   <link rel="styleSheet" href="slot3.css">
+</head>
+<body>
+    <a href="index.html">Home</a>
+   <div id="slots">
+       <div>
+           <img src="Lemon.png" alt="slot" id="slot1" width="36px" height="36px">
+           <img src="Cherries.png" alt="slot" id="slot2" width="36px" height="36px">
+           <img src="Lemon.png" alt="slot" id="slot3" width="36px" height="36px">
+           <img src="Cherries.png" alt="slot" id="slot4" width="36px" height="36px">
+           <img src="Lemon.png" alt="slot" id="slot5" width="36px" height="36px">
+           <img src="Cherries.png" alt="slot" id="slot6" width="36px" height="36px">
+           <img src="Lemon.png" alt="slot" id="slot7" width="36px" height="36px">
+       </div>
+       <br>
+       <div>
+           <img src="Clove.png" alt="slot" id="slot8" width="36px" height="36px">
+           <img src="Bell.png" alt="slot" id="slot9" width="36px" height="36px">
+           <img src="Clove.png" alt="slot" id="slot10" width="36px" height="36px">
+           <img src="Bell.png" alt="slot" id="slot11" width="36px" height="36px">
+           <img src="Clove.png" alt="slot" id="slot12" width="36px" height="36px">
+           <img src="Bell.png" alt="slot" id="slot13" width="36px" height="36px">
+           <img src="Clove.png" alt="slot" id="slot14" width="36px" height="36px">
+       </div>
+       <br>
+       <div>
+           <img src="Lemon.png" alt="slot" id="slot15" width="36px" height="36px">
+           <img src="Cherries.png" alt="slot" id="slot16" width="36px" height="36px">
+           <img src="Lemon.png" alt="slot" id="slot17" width="36px" height="36px">
+           <img src="Cherries.png" alt="slot" id="slot18" width="36px" height="36px">
+           <img src="Lemon.png" alt="slot" id="slot19" width="36px" height="36px">
+           <img src="Cherries.png" alt="slot" id="slot20" width="36px" height="36px">
+           <img src="Lemon.png" alt="slot" id="slot21" width="36px" height="36px">
+       </div>
+   </div>
+   <br>
+   <div id="inputs">
+       <p id="money">Money: $500.00</p>
+       <button onclick="start()">Spin</button>
+       <br>
+       <br>
+       <input type="number" id="betAmount" placeholder="How Much Money?">
+       <br>
+       <br>
+       <input type="number" id="quickSpin" placeholder="How Many Spins?">
+   </div>
+   <div id="otherText">
+       <h2 id="noMoney"></h2>
+       <h2 id="lost"></h2>
+   </div>
+   <br>
+   <div id="upgrades">
+       <div id="luckUpgrade">
+           <input type="number" placeholder="X-Times" id="luckXUpgrades">
+           <button onclick="addLuck()">Add Luck: $500</button>
+           <h3 id="luckText">Current Luck: x1</h3>
+          
+       </div>
+       <br>
+       <div id="rangeChangers">
+           <h4>Ranges Can Go Under The High Of A Symbol Below It</h1>
+           <h2 style="display: inline-flex;">Cherry Range</h2>
+           <img src="Cherries.png" alt="slot" style="display: inline-flex;">
+           <br>
+           <input type="number" placeholder="High Range" id="cherryHigh">
+           <button onclick="changeRanges(0)">Set Range: $10,000</button>
+           <h3 id="cherryRangeText">Current Range: 0 - 15</h3>
+           <br>
+           <h2 style="display: inline-flex;">Lemon Range</h2>
+           <img src="Lemon.png" alt="slot" style="display: inline-flex;">
+           <br>
+           <input type="number" placeholder="Low Range" id="lemonLow">
+           <input type="number" placeholder="High Range" id="lemonHigh">
+           <button onclick="changeRanges(1)">Set Range: $15,000</button>
+           <h3 id="lemonRangeText">Current Range: 15 - 30</h3>
+           <br>
+           <h2 style="display: inline-flex;">Clover Range</h2>
+           <img src="Clove.png" alt="slot" style="display: inline-flex;">
+           <br>
+           <input type="number" placeholder="Low Range" id="cloverLow">
+           <input type="number" placeholder="High Range" id="cloverHigh">
+           <button onclick="changeRanges(2)">Set Range: $20,000</button>
+           <h3 id="cloverRangeText">Current Range: 30 - 45</h3>
+           <br>
+           <h2 style="display: inline-flex;">Bell Range</h2>
+           <img src="Bell.png" alt="slot" style="display: inline-flex;">
+           <br>
+           <input type="number" placeholder="Low Range" id="bellLow">
+           <input type="number" placeholder="High Range" id="bellHigh">
+           <button onclick="changeRanges(3)">Set Range: $25,000</button>
+           <h3 id="bellRangeText">Current Range: 45 - 60</h3>
+           <br>
+           <h2 style="display: inline-flex;">Diamond Range</h2>
+           <img src="Diamond.png" alt="slot" style="display: inline-flex;">
+           <br>
+           <input type="number" placeholder="Low Range" id="diamondLow">
+           <input type="number" placeholder="High Range" id="diamondHigh">
+           <button onclick="changeRanges(4)">Set Range: $30,000</button>
+           <h3 id="diamondRangeText">Current Range: 60 - 75</h3>
+           <br>
+           <h2 style="display: inline-flex;">Treasure Range</h2>
+           <img src="Chest.png" alt="slot" style="display: inline-flex;">
+           <br>
+           <input type="number" placeholder="Low Range" id="treasureLow">
+           <input type="number" placeholder="High Range" id="treasureHigh">
+           <button onclick="changeRanges(5)">Set Range: $35,000</button>
+           <h3 id="treasureRangeText">Current Range: 75 - 90</h3>
+           <br>
+           <h2 style="display: inline-flex;">Seven Range</h2>
+           <img src="Seven.png" alt="slot" style="display: inline-flex;">
+           <br>
+           <input type="number" placeholder="Low Range" id="sevenLow">
+           <button onclick="changeRanges(6)">Set Range: $40,000</button>
+           <h3 id="sevenRangeText">Current Range: 90 - 100</h3>
+       </div>
+   </div>
+</body>
+</html>

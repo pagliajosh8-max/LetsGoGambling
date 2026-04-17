@@ -1,0 +1,254 @@
+.card {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  margin: 50px;
+  border-radius: 10px;
+  cursor: default;
+}
+.newCard {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  margin: 50px;
+  border-radius: 10px;
+}
+#Newbuttons {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+}  
+.Actions {
+  width: 135px;
+  height: 135px;
+  font-size: 30px;
+  background-color: red;
+  font-family: cursive;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  gap: 20px;
+}
+body{
+    background-color: rgb(4, 114, 4);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 20px;
+}
+.Num {
+    font-size: 75px;
+    text-align: center;
+    margin: 5px;
+    margin-top: -5px;
+}
+.TLsuit {
+text-align: left;
+margin: 0px;
+margin-left: 10px;
+font-size: 50px;
+}
+.BRsuit {
+    text-align: right;
+    margin-top: 0px;
+    margin-right: 10px;
+    font-size: 50px;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+#YourCards{
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+.Ace {
+   width: 50px;
+  height: 50px;  
+  margin-left: 20px;
+  margin-top: -100px;
+  font-size: 25px;
+  font-style: oblique;
+  cursor: pointer;
+}
+#YourScore{
+   text-align: center;
+   font-size: 50px;
+   cursor: default;
+   background-color: white;
+   width: 90px;
+  border: 5px solid black;
+  border-radius: 5px;
+  margin-bottom: -40px;
+   
+}
+#Money{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: gold;
+  font-size: 50px;
+  width: 200px;
+  height: 75px;
+  border-radius: 15px;
+  cursor: default;
+  margin-bottom: 20px;
+}
+.Bet {
+  width: 75px;
+  height: 50px;
+  font-size: 20px;
+  background-color: gold;
+  font-family: cursive;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#BetButtons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+#Bet{
+  background-color: white;
+  width: 50px;
+  text-align: center;
+  font-size: 25px;
+  border: 5px solid black;
+    border-radius: 5px;
+      min-width: 75px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  margin-top: 10px;
+  white-space: nowrap;
+  width: auto;
+}
+#BetAmt{
+  min-width: 75px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  margin-top: 10px;
+  white-space: nowrap;
+  width: auto;
+}
+#Streak{
+min-width: 75px;
+background-color: rgb(170, 64, 3);
+font-size: 25px;
+border: 5px solid black;
+border-radius: 5px;
+display: flex;
+cursor: default;
+padding: 0 10px;
+white-space: nowrap;
+}
+#Losses{
+min-width: 75px;
+background-color: rgb(170, 64, 3);
+font-size: 25px;
+border: 5px solid black;
+    border-radius: 5px;
+    display: flex;
+cursor: default;
+padding: 0 10px;
+white-space: nowrap;
+}
+#Back{
+  background-color: goldenrod; 
+}
+#Button1 a {
+   font-size: 32px;
+   padding: 10px 20px;
+   margin-right: 15px;
+   background-color: #972a27;
+   color: #FFBF00;
+   text-decoration: none; 
+   display: inline-block;
+   border-radius: 10px; 
+   border: 2px solid #FFBF00; 
+   box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+#Button1 a:hover {
+    background-color: #FFBF00;
+    color:#972a27;
+    border: 2px solid #972a27;
+}
+.cardTitles{
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  background-color: black;
+  color: gold;
+  width: 165px;
+  height: 35px;
+  align-items: center;
+  border-radius: 10px;
+  cursor: default;
+  margin-bottom: -30px;
+}
+#leftColumn{
+display: flex;
+flex-direction: column;
+width: 250px;
+flex-shrink: 0;
+text-align: center;
+align-items: center;
+background-color: chocolate;
+margin-top: 150px;
+border-radius: 20px;
+height: 500px;
+width: 350px;
+margin-left: -50px;
+
+}
+#centerColumn{
+display: flex;
+flex-direction: column;
+min-width: 500px;
+flex-grow: 1;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+#rightColumn{
+display: flex;
+flex-direction: column;
+width: 250px;
+flex-shrink: 0;
+text-align: center;
+align-items: center;
+background-color: chocolate;
+margin-top: 150px;
+border-radius: 20px;
+height: 500px;
+width: 350px;
+margin-right: 85px;
+}
+.Right{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: gold;
+  font-size: 20px;
+  width: 200px;
+  height: 75px;
+  border-radius: 15px;
+  cursor: default;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style> 
+    body {
+        background-image: url(Background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+    #Board {
+        background-image: url(GreenSquare.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        padding: 20px;
+        border-radius: 10px;
+        min-height: 300px;
+       width: 200px;
+    }  
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="roulette.css">
+    <div id="Button1">
+    <a href="index.html">Home</a>
+    <p id="Balance">Balance</p>
+    </div>
+</head>
+<body>
+  <div id="Board">
+                <h1>Bets</h1>
+                <h2>Red</h2>
+                <p id="Red"></p>
+                <h2>Black</h2>
+                <p id="Black"></p>
+                <h2>Green</h2>
+                <p id="Green"></p>
+                <h2>Even</h2>
+                <p id="Even"></p>
+                <h2>Odd</h2>
+                <p id="Odd"></p>
+                <h2>High</h2>
+                <p id="High"></p>
+                <h2>Low</h2>
+                <p id="Low"></p>
+                <h2>1</h2>
+                <p id="One"></p>
+                <h2>2</h2>
+                <p id="Two"></p>
+                <h2>3</h2>
+                <p id="Three"></p>
+                <h2>4</h2>
+                <p id="Four"></p>
+                <h2>5</h2>
+                <p id="Five"></p>
+                <h2>6</h2>
+                <p id="Six"></p>
+                <h2>7</h2>
+                <p id="Seven"></p>
+                <h2>8</h2>
+                <p id="Eight"></p>
+                <h2>9</h2>
+                <p id="Nine"></p>
+                <h2>10</h2>
+                <p id="Ten"></p>
+                <h2>11</h2>
+                <p id="Eleven"></p>
+                <h2>12</h2>
+                <p id="Twelve"></p>
+                <h2>13</h2>
+                <p id="Thirteen"></p>
+                <h2>14</h2>
+                <p id="Fourteen"></p>
+                <h2>15</h2>
+                <p id="Fifteen"></p>
+                <h2>16</h2>
+                <p id="Sixteen"></p>
+              </div>
+    <div class="mainbox" id="mainbox">
+        <div id="box" class="box">
+            <div class="container">
+              
+    
+    
+    <div id="wheel">
+  <div class="label" style="--i:0">5</div>
+  <div class="label" style="--i:1">4</div>
+  <div class="label" style="--i:2">3</div>
+  <div class="label" style="--i:3">2</div>
+  <div class="label" style="--i:4">1</div>
+  <div class="label" style="--i:5">16</div>
+  <div class="label" style="--i:6">15</div>
+  <div class="label" style="--i:7">14</div>
+  <div class="label" style="--i:8">13</div>
+  <div class="label" style="--i:9">12</div>
+  <div class="label" style="--i:10">11</div>
+  <div class="label" style="--i:11">10</div>
+  <div class="label" style="--i:12">9</div>
+  <div class="label" style="--i:13">8</div>
+  <div class="label" style="--i:14">7</div>
+  <div class="label" style="--i:15">6</div>
+</div>
+<div id="select"></div>
+    <div id="butns">
+    
+    <button id="spinBtn" class ="Btn" onclick="roll()">SPIN</button>
+    <button id="Red1" onclick="Red()">Red</button>
+    <button id="Black1" onclick="Black()">Black</button>
+    <button id="Green1" onclick="Green()">Green</button>
+
+    <button id=amtBt onclick="High()">High</button>
+    <button id=amtBt onclick="Low()">Low</button>
+    <button id=amtBt onclick="Even()">Even</button>
+    <button id=amtBt onclick="Odd()">Odd</button>
+    
+    <button id="nums" onclick="One()">1</button>
+    <button id="nums" onclick="Two()">2</button>
+    <button id="nums" onclick="Three()">3</button>
+    <button id="nums" onclick="Four()">4</button>
+    <button id="nums" onclick="Five()">5</button>
+    <button id="nums" onclick="Six()">6</button>
+    <button id="nums" onclick="Seven()">7</button>
+    <button id="nums" onclick="Eight()">8</button>
+    <button id="nums" onclick="Nine()">9</button>
+    <button id="nums" onclick="Ten()">10</button>
+    <button id="nums" onclick="Eleven()">11</button>
+    <button id="nums" onclick="Twelve()">12</button>
+    <button id="nums" onclick="Thirteen()">13</button>
+    <button id="nums" onclick="Fourteen()">14</button>
+    <button id="nums" onclick="Fifteen()">15</button>
+    <button id="nums" onclick="Sixteen()">16</button>
+    </div>
+</div>
+<div id="Bet1">
+  <button id="bet" id = "5" onclick="BetVal(5)">5</button>
+  <button id="bet" id = "10" onclick="BetVal(10)">10</button>
+  <button id="bet" id = "20" onclick="BetVal(20)">20</button>
+  <button id="bet" id = "50" onclick="BetVal(50)">50</button>
+  <button id="bet" id = "100" onclick="BetVal(100)">100</button>
+</div>
+  <script src="roullette2.js"></script>
+</body>
+</html>

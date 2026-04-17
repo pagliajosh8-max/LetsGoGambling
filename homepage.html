@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style> 
+    body {
+        background-image: url(Background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="poker.css">
+</head>
+<body>
+    <div id="Button1">
+    <a href="index.html">Home</a>
+    </div>
+    <p id="Money">Money</p>
+    <div id="opponent">
+        <div id = "card1" class = "card">
+         <p id="TL1" class = "TL">?</p>
+         <p id = "1" class = "Cval">?</p>
+         <p id = "BR1" class = "BR">?</p>
+        </div>
+    <div id = "card2" class = "card">
+        <p id="TL2" class="TL">?</p>
+        <p id="2" class = "Cval">?</p>
+        <p id="BR2" class = "BR">?</p>
+    </div>
+    </div>
+
+    <div id="river">
+    <div  id="card3" class="card">
+        <p id="TL3" class="TL">s</p>
+        <p id="3" class = "Cval">Q</p>
+        <p id="BR3" class = "BR">s</p>
+    </div>
+    <div id="card4" class="card">
+        <p id="TL4" class="TL">s</p>
+        <p id="4" class = "Cval">J</p>
+        <p id="BR4" class = "BR">s</p>
+    </div>
+    <div id="card5" class="card">
+        <p id="TL5" class="TL" >s</p>
+        <p id="5" class = "Cval">10</p>
+        <p id="BR5" class = "BR">s</p>
+    </div>
+    <div id="card6" class="card">
+        <p id="TL6" class="TL">s</p>
+        <p id="6" class = "Cval">9</p>
+        <p id="BR6"class = "BR">s</p>
+    </div>
+    <div id="card7" class="card">
+        <p id="TL7" class="TL">s</p>
+        <p id="7" class = "Cval">8</p>
+        <p id="BR7" class = "BR">s</p>
+    </div>
+    </div>
+    
+    <div id="player">
+    <div id="card8" class="card">
+        <p id="TL8" class="TL">s</p>
+        <p id="8" class = "Cval">7</p>
+        <p id="BR8" class = "BR">s</p>
+    </div>
+    <div id="card9" class="card">
+        <p id="TL9" class="TL">s</p>
+        <p id="9" class = "Cval">6</p>
+        <p id="BR9" class = "BR">s</p>
+    </div>
+    </div>
+</div>
+<button onclick="Stand()">Stand</button>
+<button class="Bet" onclick="bet(5)">5</button>
+<button class="Bet" onclick="bet(10)">10</button>
+<button class="Bet" onclick="bet(25)">25</button>
+<button class="Bet" onclick="bet(50)">50</button>
+<button class="Bet" onclick="bet(100)">100</button>
+    <script src="poker.js"></script>
+</body>
+</html>

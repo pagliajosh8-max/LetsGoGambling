@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slots</title>
+    <link rel="stylesheet" href="slots.css">
+    <script src="slots.js"></script>
+    <style>
+            body {
+        background-image: url(Background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div id="Button1">
+    <a href="index.html">Home</a>
+    </div>
+    <h1>Slots</h1>
+    <div id="slots">
+        <!--The main slots-->
+        <button onclick="spinStart()">Roll</button>
+        <div id="row">
+            <img id="1" class="tile" width="100" height="100" src="Cherries.png" alt="Slots">
+            <img id="2" class="tile" width="100" height="100" src="Lemon.png" alt="Slots">
+            <img id="3" class="tile" width="100" height="100" src="Cherries.png" alt="Slots">
+            <img id="4" class="tile" width="100" height="100" src="Lemon.png" alt="Slots">
+            <img id="5" class="tile" width="100" height="100" src="Cherries.png" alt="Slots">
+            <br>
+        </div>
+        <div id="row">
+            <img id="6" class="tile" width="100" height="100" src="Chest.png" alt="Slots">
+            <img id="7" class="tile" width="100" height="100" src="Seven.png" alt="Slots">
+            <img id="8" class="tile" width="100" height="100" src="Chest.png" alt="Slots">
+            <img id="9" class="tile" width="100" height="100" src="Seven.png" alt="Slots">
+            <img id="10" class="tile" width="100" height="100" src="Chest.png" alt="Slots">
+            <br>
+        </div>
+        <div id="row">
+            <img id="11" class="tile" width="100" height="100" src="Clove.png" alt="Slots">
+            <img id="12" class="tile" width="100" height="100" src="Diamond.png" alt="Slots">
+            <img id="13" class="tile" width="100" height="100" src="Clove.png" alt="Slots">
+            <img id="14" class="tile" width="100" height="100" src="Diamond.png" alt="Slots">
+            <img id="15" class="tile" width="100" height="100" src="Clove.png" alt="Slots">
+        </div>
+    </div>
+    <!--Score things-->
+    <h2 id="scoreText">$0</h2>
+    <h1>Symbol Multiplier</h1>
+    <div style="display: inline-block;" id="Mult">
+    <h2>Cherries</h2>
+    <img src="Cherries.png" alt="Slots" width="40" height="40">
+    <h3 style="display: inline;">1x Mult</h3>
+    </div>
+    <div style="display: inline-block;" id="Mult">
+    <h2>Lemon</h2>
+    <img src="Lemon.png" alt="Slots" width="40" height="40">
+    <h3 style="display: inline;">1.25x Mult</h3>
+    </div>
+    <div style="display: inline-block;" id="Mult">
+    <h2>Clove</h2>
+    <img src="Clove.png" alt="Slots" width="40" height="40">
+    <h3 style="display: inline;">1.5x Mult </h3>
+    </div>
+    <div style="display: inline-block;" id="Mult">
+    <h2>Diamond</h2>
+    <img src="Diamond.png" alt="Slots" width="40" height="40">
+    <h3 style="display: inline;">2x Mult </h3>
+    </div>
+    <div style="display: inline-block;" id="Mult">
+    <h2>Chest</h2>
+    <img src="Chest.png" alt="Slots" width="40" height="40">
+    <h3 style="display: inline;">2.5x Mult </h3>
+    </div>
+    <div style="display: inline-block;" id="Mult">
+    <h2>Seven</h2>
+    <img src="Seven.png" alt="Slots" width="40" height="40">
+    <h3 style="display: inline;">5x Mult </h3>
+    </div>
+    <!--Patterns-->
+    <div id="Patterns">
+    <h1>Patterns</h1>
+    <div id="Patterns" class="Pattern" style="display: inline-block;">
+            <h3>Rows (3,4,5): 100, 250, 750</h3>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <br>
+            <br>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <br>
+            <br>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div> 
+        <div id="Patterns" class="Pattern" style="display: inline-block;">
+            <h3>Column: 100</h3>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>    
+        <div id="Patterns" class="Pattern" style="display: inline-block;">
+            <h3>Diagonals: 100</h3>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            
+        </div>
+        <div id="Patterns" class="Pattern" style="display: inline-block;">
+            <h3>Hills: 750</h3>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+        </div>
+        <div id="Patterns" class="Pattern" style="display: inline-block;">
+            <h3>Vs: 750</h3>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <br>
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+        </div>
+        <div id="Patterns" class="Pattern" style="display: inline-block;">
+            <h3>Eye: 1250</h3>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Lemon.png" alt="Slots" width="40" height="40">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div id="Patterns" class="Pattern" style="display: inline-block;" >
+            <h3>Jackpot: 5000</h3>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <img src="Cherries.png" alt="Slots" width="40" height="40">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+        

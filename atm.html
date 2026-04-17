@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="atm.css">
+</head>
+<body>
+    <style>
+body {
+                background-image: url(ATM.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                }
+        
+    </style>
+    
+    <div id="Button1">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="right-panel">
+
+    <div id="type">
+        <input placeholder="ATM Code" id="codeInput">
+    </div>
+
+    <div id="code">
+        <button onclick="code()">Enter ATM Code</button>
+    </div>
+
+    <div id="take1">
+        <button onclick="redeem()" id="take">
+            Take from your childs college fund
+        </button>
+    </div>
+
+        <h1 id="amt"></h1>
+    
+</div>
+
+    <script src="atm.js"></script>
+</body>
+</html>

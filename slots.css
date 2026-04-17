@@ -1,0 +1,32 @@
+#slots{
+    text-align: center;
+    background-color: #001400;
+}
+
+body{
+    background-color: rgb(4, 114, 4);
+}
+#Mult{
+    padding: 5px;
+    background-color: bisque;
+}
+.Pattern{
+    padding: 15px;
+    background-color: bisque;
+}
+#Button1 a {
+   font-size: 32px;
+   padding: 10px 20px;
+   margin-right: 15px;
+   background-color: #972a27;
+   color: #FFBF00;
+   text-decoration: none; 
+   display: inline-block;
+   border-radius: 10px; 
+   border: 2px solid #FFBF00; 
+   box-shadow: 2px 2px 6px rgba(0,0,0,0.3);}
+#Button1 a:hover {
+    background-color: #FFBF00;
+    color:#972a27;
+    border: 2px solid #972a27;
+}

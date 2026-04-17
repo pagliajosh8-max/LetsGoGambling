@@ -1,0 +1,241 @@
+
+#wheel {
+  position: relative;
+  margin-top: -1300px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 5px solid #333;
+  background: conic-gradient(
+    red 0deg 22.5deg,
+    black 22.5deg 45deg,
+    red 45deg 67.5deg,
+    black 67.5deg 90deg,
+    red 90deg 112.5deg,
+    black 112.5deg 135deg,
+    red 135deg 157.5deg,
+    black 157.5deg 180deg,
+    red 180deg 202.5deg,
+    black 202.5deg 225deg,
+    red 225deg 247.5deg,
+    black 247.5deg 270deg,
+    red 270deg 292.5deg,
+    black 292.5deg 315deg,
+    red 315deg 337.5deg,
+    rgb(25, 165, 0) 337.5deg 360deg
+  );
+  transition: transform 4s ease-out;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  transform: rotate(calc(var(--i) * 22.5deg)) translate(220px) rotate(90deg);
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+#select{
+  width: 100px;
+  height: 100px;
+  background-color: #6c6c6c;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  margin-left: 254px;
+  margin-top: -35px;
+}
+#mainbox{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 170px;
+}
+#Button1 a {
+   font-size: 32px;
+   padding: 10px 20px;
+   margin-right: 15px;
+   background-color: #972a27;
+   color: #FFBF00;
+   text-decoration: none; 
+   display: inline-block;
+   border-radius: 10px; 
+   border: 2px solid #FFBF00; 
+   box-shadow: 2px 2px 6px rgba(0,0,0,0.3);}
+#Button1 a:hover {
+    background-color: #FFBF00;
+    color:#972a27;
+    border: 2px solid #972a27;
+}
+.label{
+cursor: default;
+  }
+  #spinBtn{
+    font-size: 20px;
+   padding: 10px 20px;
+   margin-right: 15px;
+   background-color: #972a27;
+   color: #FFBF00;
+   text-decoration: none; 
+   display: inline-block;
+   border-radius: 10px; 
+   border: 2px solid #FFBF00; 
+   box-shadow: 2px 2px 6px rgba(0,0,0,0.3);}
+   #spinBtn:hover {
+    background-color: #FFBF00;
+    color:#972a27;
+    border: 2px solid #972a27;
+}
+
+#bet{
+  width: 75px;
+  height: 50px;
+  font-size: 20px;
+  background-color: gold;
+  font-family: cursive;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+  
+}
+#bet:Hover{
+color: gold;
+background-color: #000000;
+}
+
+#amtBt{
+  background-color:#000000;
+  color: white;
+  border: none;
+  margin-right: 5px;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: auto;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #ffffff; 
+}
+#amtBt:Hover{
+  color: #000000;
+  background-color:white;
+  border: 2px solid #000000; 
+}
+
+#nums{
+  background-color: #FFBF00;
+  margin-right: 5px;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: auto;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  border: 2px solid #000000; 
+}
+
+#nums:Hover{
+  color: #FFBF00;
+  background-color:#000000;
+  border: 2px solid #FFBF00; 
+}
+
+#Red1{
+  background-color: #972a27;
+   color: #FFBF00;
+   margin-right: 5px;
+   border: none;
+   margin-right: 5px;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: auto;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #FFBF00; 
+  font-weight: bolder;
+}
+#Red1:Hover{
+background-color: #FFBF00;
+color: #972a27;
+border: 2px solid #972a27; 
+font-weight: bolder;
+}
+
+#Green1{
+  background-color: rgb(25, 165, 0);
+   color: #FFBF00;
+   margin-right: 5px;
+   border: none;
+   margin-right: 5px;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: auto;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 2px solid #FFBF00; 
+}
+#Green1:Hover{
+background-color: #FFBF00;
+color: rgb(25, 165, 0);
+border: 2px solid rgb(25, 165, 0); 
+}
+
+#Black1{
+  background-color: #000000;
+   color: #FFBF00;
+   margin-right: 5px;
+   border: none;
+   margin-right: 5px;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: auto;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 2px solid #FFBF00; 
+}
+#Black1:Hover{
+background-color: #FFBF00;
+  color: #000000;
+  border: 2px solid #000000; 
+}
+#Board{
+  background-color: rgb(108, 108, 108);
+  width: 450px;
+}
+#Bet1{
+  margin-left: 650px;
+  width: 200px;
+}
+#butns{
+  margin-left: 650px;
+  margin-top: -700px;
+  width: 200px;
+}
+
+#Balance{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: gold;
+  font-size: 50px;
+  width: 200px;
+  height: 75px;
+  border-radius: 15px;
+  cursor: default;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+  
